@@ -9,22 +9,7 @@ import { print } from "../settings.js";
 - the way you choose the length of single words is left to you
 */
 // skills: string methods, Math.random, parseInt
-
-function loremIpsumGenerator(stringInput, type) {
-
-    const intInput = parseInt(stringInput);
-
-    if(type == "words") {
-
-    } else if(type == "characters") {
-        
-
-        Array.join(" ")
-
-    } else {
-        return "Please enter for the type-parameter either 'words' or 'characters";
-    }
-}
+print("Lorem Ipsum Generator:");
 
 
 var outputString = "nothing";
