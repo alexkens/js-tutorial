@@ -42,3 +42,48 @@ print(duplicates);
 
 // Binary Search
 // skills: sort
+print("Binary Search:")
+const inputValue = array[Math.floor(Math.random() * array.length)];
+print("Input value: " + inputValue);
+
+function binarySearch(inputValue, array) {
+    array.sort();
+    
+    var middle = array.length / 2;
+    var start = 0;
+    var end = array.length - 1;
+
+    var counter = 0;
+    while(counter < array.length) {
+        print("counter: " + counter + ", middle: " + middle);
+
+        if(array[middle] == inputValue) {
+            return middle;
+        }
+        if(array[middle] > inputValue) {
+            end = middle - 1;
+            middle = Math.floor(middle / 2) + start;
+        } else if(array[middle] < inputValue) {
+            start = middle + 1;
+            middle = (end - start) / 2 + 1;
+        } else {
+            
+        }
+        
+        counter++;
+    }
+    return "input has not been found";
+}
+
+const result = binarySearch(inputValue, array);
+print("Sorted Array: " + array.sort());
+print("Result index: " + result);
+
+
+
+
+
+
+
+
+// More sorting algorithms: https://www.geeksforgeeks.org/dsa/sorting-algorithms/
