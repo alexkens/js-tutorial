@@ -5,7 +5,7 @@ import { print } from "../settings.js";
 // create an array with 100 integer elements which are randomly created
 // use the Math.random function
 print("Array with random values:");
-var array = []
+var array = [];
 for(let i=0; i < 20; i++) {
     array[i] = Math.floor(Math.random() * 100);
 }
@@ -16,7 +16,7 @@ print("");
 // and if one of the elements is equal to zero, don't consider it
 print("Reduced Value:");
 const reducedValue = array.reduce((accumulator, currentValue) => {
-    if(currentValue < 23 && currentValue != 0) {
+    if(currentValue < 30 && currentValue != 0) {
         accumulator *= currentValue;
     }
     return accumulator;
@@ -42,48 +42,44 @@ print(duplicates);
 
 // Binary Search
 // skills: sort
-print("Binary Search:")
-const inputValue = array[Math.floor(Math.random() * array.length)];
-print("Input value: " + inputValue);
+var array2 = []
+for(let i=0; i < 20; i++) {
+    array2[i] = Math.floor(Math.random() * 100);
+}
 
-function binarySearch(inputValue, array) {
-    array.sort();
+print("Binary Search:")
+const inputValue = array2[Math.floor(Math.random() * array2.length)];
+print("Input value: " + inputValue);
+array2.sort((x, y) => x - y);
+print("Sorted Array: " + array2);
+
+function binarySearch(inputValue, arr) {
     
-    var middle = array.length / 2;
+    var middle = arr.length / 2;
     var start = 0;
-    var end = array.length - 1;
+    var end = arr.length - 1;
 
     var counter = 0;
-    while(counter < array.length) {
+    while(counter < arr.length) {
         print("counter: " + counter + ", middle: " + middle);
 
-        if(array[middle] == inputValue) {
+        if(arr[middle] == inputValue || start == end) {
             return middle;
         }
-        if(array[middle] > inputValue) {
+        if(arr[middle] > inputValue) {
             end = middle - 1;
             middle = Math.floor(middle / 2) + start;
-        } else if(array[middle] < inputValue) {
+        } else if(arr[middle] < inputValue) {
             start = middle + 1;
-            middle = (end - start) / 2 + 1;
-        } else {
-            
-        }
-        
+            middle = Math.floor((end - start) / 2) + start;
+        } else {}
         counter++;
     }
     return "input has not been found";
 }
 
-const result = binarySearch(inputValue, array);
-print("Sorted Array: " + array.sort());
-print("Result index: " + result);
-
-
-
-
-
-
+const resultIndex = binarySearch(inputValue, array2);
+print("Result index: " + resultIndex);
 
 
 // More sorting algorithms: https://www.geeksforgeeks.org/dsa/sorting-algorithms/
