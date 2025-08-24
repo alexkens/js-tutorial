@@ -21,6 +21,8 @@ So our output should look like this (depending on the input):
 
 function aWordGenerator(stringInput, type="characters") {
 
+    /* your code */
+
 }
 
 

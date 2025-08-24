@@ -4,6 +4,9 @@ import { print } from "../settings.js";
 /*
 Parameters: stringInput, type=["characters", "words"], language=["latin", "german"]
 Output: string of lorem Ipsum -> "Lorem Ipsum ..."
+
+- use the global variables loremDE and loremLATIN to generate any filler text
+- 
 */
 // skills: parseInt
 
@@ -14,11 +17,13 @@ const loremLATIN = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  se
 
 function loremIpsumGenerator(stringInput, type="characters", language="latin") {
 
-    const intInput = parseInt(stringInput);
+    /* your code */
 
     return output;
 }
 
 
 var outputString = loremIpsumGenerator("10", "words", "latin");
+print(outputString);
+outputString = loremIpsumGenerator("12", "words", "german");
 print(outputString);
