@@ -44,7 +44,6 @@ function aWordGenerator(stringInput, type="characters") {
         }
 
         const averageWord = 4;
-        
         const spaces = Math.floor(intInput / averageWord);
         const wordSpace = intInput - spaces;
 
