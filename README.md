@@ -4,7 +4,9 @@ This tutorial is divided into **3 parts** – lessons, tasks and solution.
 
 - The **lessons** represent knowledge that might be helpful for finishing the tasks but you shouldn't rely on them completely.  
 - The **tasks** are JavaScript files that you have to connect to the `index.html` file by inserting the preferred filename into the `<script>` tag.
-- The tag is in the `<head>` tag and you copy the filename into the `src` attribute like:
+- If your are getting nowhere, you can inspire yourself in the **solutions**. I don't guarantee the best solutions and if you find any mistakes, props to you!
+
+In the index.html file is the `<head>` tag and you can copy the filename you are working in into the `src` attribute like:
 
 ```html
 <script src="tasks/filename.js"></script>
@@ -19,7 +21,7 @@ print("hello " + "world");
 print("hello" + `${4}`);
 ```
 
-If your are getting nowhere, you can inspire yourself in the solutions. I don't guarantee the best solutions and if you find any mistakes, props to you! The task and solution files are supposed to be worked through in this order:
+The task files are supposed to be worked through this order, but obviously you are free to roam:
 
 ```js
 iteration.js
