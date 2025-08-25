@@ -10,8 +10,7 @@ This tutorial is divided into **3 parts** – lessons, tasks and solution.
 <script src="tasks/filename.js"></script>
 ```
 
-Through that action you can see on the html canvas what you are coding. Instead of using the command "console.log" you can just use the "print" method that has been defined.  
-And don't forget to turn on the Live Server extension on your VSCode editor.
+Through that action you can see on the html canvas what you are coding. Instead of using the command "console.log" you can just use the "print" method that has been defined. And don't forget to turn on the Live Server extension on your VSCode editor.
 The print function is used like ..
 
 ```js
@@ -20,8 +19,7 @@ print("hello " + "world");
 print("hello" + `${4}`);
 ```
 
-If your are getting nowhere, you can inspire yourself in the solutions. I don't guarantee the best solutions and if you find any mistakes, props to you!  
-The task and solution files are supposed to be worked through in this order:
+If your are getting nowhere, you can inspire yourself in the solutions. I don't guarantee the best solutions and if you find any mistakes, props to you! The task and solution files are supposed to be worked through in this order:
 
 ```js
 iteration.js
