@@ -23,13 +23,11 @@ print("hello" + `${4}`);
 
 The task files are supposed to be worked through this order, but obviously you are free to roam:
 
-```js
-iteration.js
-arrayFunction1.js
-arrayFunction2.js
-loremIpsumGenerator.js
-aWordGenerator.js
-```
+1. `iteration.js`  
+2. `arrayFunction1.js`  
+3. `arrayFunction2.js`  
+4. `loremIpsumGenerator.js`  
+5. `aWordGenerator.js`
 
 ## Additional sources:
 A great source of information: https://developer.mozilla.org/de/docs/Web/JavaScrip  
