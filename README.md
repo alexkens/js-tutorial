@@ -7,6 +7,7 @@ This tutorial is divided into **3 parts** – lessons, tasks and solution.
 
 ```html
 <script src="tasks/filename.js"></script>
+```
 
 Through that action you can see on the html canvas what you are coding. Instead of using the command "console.log" you can just use the "print" method that has been defined. And don't forget to turn on the Live Server extension on your VSCode editor.
 The print function is used like ..
@@ -15,6 +16,7 @@ The print function is used like ..
 print("hello world");
 print("hello " + "world");
 print("hello" + `${4}`);
+```
 
 If your are getting nowhere, you can inspire yourself in the solutions. I don't guarantee the best solutions and if you find any mistakes, props to you!
 The task and solution files are supposed to be worked through in this order:
@@ -25,6 +27,7 @@ arrayFunction1.js
 arrayFunction2.js
 loremIpsumGenerator.js
 aWordGenerator.js
+```
 
 ## Additional sources:
 A great source of information: https://developer.mozilla.org/de/docs/Web/JavaScrip
