@@ -41,7 +41,12 @@ for(let value in array) {
 print(duplicates);
 
 // Binary Search
-// skills: sort
+/* 
+Implement the search algorithm binary search. We can a value and an array and try to find the value in the array (if it is in there).
+Binary search splits a sorted array in half and compares the value with the split value (or middle value). Depending if the value is smaller or greater, we jump to the repsective half and start splitting again. If the splitting/middle value is qual to our input value, we return it.
+More infos: https://www.geeksforgeeks.org/dsa/binary-search/
+*/
+
 var array2 = []
 for(let i=0; i < 20; i++) {
     array2[i] = Math.floor(Math.random() * 100);
@@ -82,4 +87,4 @@ const resultIndex = binarySearch(inputValue, array2);
 print("Result index: " + resultIndex);
 
 
-// More sorting algorithms: https://www.geeksforgeeks.org/dsa/sorting-algorithms/
+// More searching algorithms: https://www.geeksforgeeks.org/dsa/searching-algorithms/
