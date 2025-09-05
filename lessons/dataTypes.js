@@ -1,3 +1,5 @@
+import { print } from "../settings.js";
+
 /* Data Types
 
 - Javascript has dynamic type checking, so instead of specifying the type of a variable, its is assumed by the language at runtime

@@ -1,3 +1,5 @@
+import { print } from "../settings.js";
+
 // loops
 // for
 const n = 10;
